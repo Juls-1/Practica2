@@ -131,7 +131,7 @@ public class Vino extends Producto implements Iliquido, IDescuento, IAlimento{
                "\nGrados de Alcohol: " +gradosAlcohol+ 
                "\nVolumen: " +volumen+ 
                "\nTipo de envase: " +tipoEnvase+ 
-               "\nDescuento: " +descuento+ 
+               "\nDescuento: " +descuento+"%"+ 
                "\nPrecio con descuento: " +precioDescuento+ 
                "\nCaducidad: " +caducidad+ 
                "\nCalorias: " +calorias;

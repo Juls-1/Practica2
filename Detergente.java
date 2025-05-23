@@ -7,7 +7,7 @@ public class Detergente extends Producto implements IDescuento, Iliquido{
 
     public Detergente(String marca, float precio){
         super(marca, precio);
-        this.tipoEnvase="plastico";
+        this.tipoEnvase="botella";
         this.volumen=500;
         this.descuento=0;
         this.precioDescuento=precio-(precio*(descuento/100));
@@ -49,7 +49,7 @@ public class Detergente extends Producto implements IDescuento, Iliquido{
                "\nPrecio: " +getPrecio()+ 
                "\nTipo de envase: " +tipoEnvase+ 
                "\nVolumen: " +volumen+ 
-               "\nDescuento: " +descuento+ 
+               "\nDescuento: " +descuento+"%"+ 
                "\nPrecio con descuento: " +precioDescuento;
     }
 }

@@ -12,20 +12,20 @@ public class Cereales extends Producto implements IAlimento{
     public Cereales(String marca, float precio, String tipo) {
         super(marca, precio);
         this.tipo=tipo;
-        if(tipo.toLowerCase().equals("espelta")){calorias=5;}
-        if(tipo.toLowerCase().equals("maíz") || tipo.toLowerCase().equals("maiz")){calorias=8;}
-        if(tipo.toLowerCase().equals("trigo")){calorias=12;}
-        else{calorias=15;}
+        if (tipo.toLowerCase().equals("espelta")) {calorias = 5;}
+        else if (tipo.toLowerCase().equals("maíz") || tipo.toLowerCase().equals("maiz")){calorias = 8;} 
+        else if (tipo.toLowerCase().equals("trigo")) { calorias = 12;} 
+        else {calorias = 15;}
         setDate("01/01/2026");
         caducidad=cal.getTime();
     }
         public Cereales(String marca, float precio, String tipo, String cad) {
         super(marca, precio);
         this.tipo=tipo;
-        if(tipo.toLowerCase().equals("espelta")){calorias=5;}
-        if(tipo.toLowerCase().equals("maíz") || tipo.toLowerCase().equals("maiz")){calorias=8;}
-        if(tipo.toLowerCase().equals("trigo")){calorias=12;}
-        else{calorias=15;}
+        if (tipo.toLowerCase().equals("espelta")) {calorias = 5;}
+        else if (tipo.toLowerCase().equals("maíz") || tipo.toLowerCase().equals("maiz")){calorias = 8;} 
+        else if (tipo.toLowerCase().equals("trigo")) { calorias = 12;} 
+        else {calorias = 15;}
         setDate(cad);
         caducidad=cal.getTime();
     }
